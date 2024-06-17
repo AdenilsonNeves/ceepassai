@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+/* Geral */
+/* Definição das variáveis de cor */
+:root {
+    --primary-color: #FF0000; /* Vermelho */
+    --secondary-color: #121212; /* Preto */
+    --background-color: #121212; /* Branco */
+    --text-color: #E0E0E0; /* Branco para o texto */
+}
+
+/* Font e Estilos Globais */
+* {
+    font-family: 'Teachers', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3, h4, p {
+    font-family: 'Times New Roman', serif;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+h4, p {
+    text-align: center;
+    align-items: start;
+}
+
+p {
+    font-size: 20px;
+    font-style: white;
+}
+
+h1, h4, p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 5px;
+    background: linear-gradient(90deg, #000000 0%, #FF0000 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+nav h1 {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+}
+
+.container nav {
+    border-radius: 50px;
+    height: 40px;
+}
+
+.container nav h1 {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+}
+
+nav a {
+    margin: 0 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+nav a:hover {
+    color: #d7fd00;
+}
+
+/* Header */
+body header {
+    position: relative;
+    background: url('../img/inicial/ceep2.jpg') no-repeat center center/cover;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    background-color: black;
+    border-radius: 20px;
+}
+
+.container nav {
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.container p {
+    color: white;
+    font-size: 10%;
+}
+
+.overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(1px);
+    color: var(--primary-color); /* Alterado para a cor primária (vermelho) */
+    font-family: Helvetica, sans-serif;
+    padding: 1em;
+    font-size: 1em;
+}
+
+.header-content h1 {
+    font-family: Helvetica, sans-serif;
+    color: var(--text-color); /* Branco */
+    text-shadow: 3px 3px 3px var(--secondary-color); /* Preto */
+    font-size: 3em;
+    margin: 0;
+    position: initial;
+    animation: fadeIn 1s ease forwards;
+}
+
+.header-content p {
+    font-family: Helvetica, sans-serif;
+    color: var(--text-color); /* Branco */
+    text-shadow: 3px 3px 3px var(--secondary-color); /* Preto */
+    margin: 0;
+    text-align: center;
+    animation: fadeIn 1s ease forwards;
+}
+
+.header-content img {
+    max-width: 300px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção original */
+    animation: fadeIn 2s ease forwards;
+    filter: drop-shadow(2px 2px 2px var(--secondary-color)); /* Preto */
+}
+
+/* Defina a animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Containers de imagem */
+.image-container {
+    position: relative;
+    text-align: center;
+    margin: 30px 20px;
+    width: 300px;
+    height: 320px;
+}
+
+.image-container img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.171);
+}
+
+.image-container h4 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.4em;
+    color: white;
+    background: linear-gradient(to bottom, transparent, rgba(245, 1, 1, 0.548));
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: background 0.3s ease;
+    text-shadow: 0 2px 4px rgb(0, 0, 0);
+}
+
+@media (max-width: 768px) {
+    .direcao .image-container h4 h1{
+        font-size: 1.2em; /* Ajuste o tamanho da fonte para tablets */
+        padding: 8px;
+        height: 25%; /* Aumente a altura para melhor legibilidade */
+    }
+}
+
+@media (max-width: 480px) {
+    .direcao .image-container h4 h1{
+        font-size: 1em; /* Ajuste o tamanho da fonte para dispositivos móveis */
+        padding: 6px;
+        height: 30%; /* Aumente a altura para melhor legibilidade em telas pequenas */
+    }
+}
+
+.image-container:hover h4 h1{
+    background: linear-gradient(to bottom, transparent, rgb(250, 52, 52));
+}
+
+/* Seções */
+section {
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #000000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+
+.direcao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Especifico para a seção "direcao" */
+#direcao .image-container {
+    margin: 10px 5px; /* Aproxima as divs da seção direção */
+}
+
+@media (max-width: 768px) {
+    body header {
+        height: 300px;
+    }
+
+    .header-content h1 {
+        font-size: 2em;
+    }
+
+    .header-content p {
+        font-size: 1.5em;
+    }
+
+    .header-content img {
+        max-width: 150px;
+    }
+
+    .direcao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        margin: 10px 0;
+        width: 80%;
+    }
+
+    nav a {
+        margin: 5px 0;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    body header {
+        height: 200px;
+    }
+
+    .header-content h1 {
+        font-size: 1.5em;
+    }
+
+    .header-content p {
+        font-size: 1.2em;
+    }
+
+    .header-content img {
+        max-width: 100px;
+    }
+
+    .image-container {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    section h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        margin: 5px 0;
+        font-size: 1em;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #E0E0E0;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+footer img {
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #E0E0E0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer .botaoEscondido {
+    display: block;
+}

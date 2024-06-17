@@ -1,0 +1,78 @@
+body {
+    background-image: url('../img/bgLogin.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(110, 110, 101);
+    border-radius: 10px;
+    padding: 1%;
+    width: 40%;
+    position: relative;
+}
+
+.loginContainer h2 {
+    align-self: flex-start; /* Alinha o h2 à esquerda */
+    margin-left: 10%; /* Ajusta a margem conforme necessário */
+}
+
+.loginContainer form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; /* Alinha os elementos do formulário ao centro */
+}
+
+.loginContainer input {
+    margin-bottom: 5%;
+    padding: 2%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%; /* Ajusta a largura conforme necessário */
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.loginContainer button {
+    padding: 2%;
+    border: none;
+    border-radius: 5px;
+    background-color: #a02914;
+    color: white;
+    cursor: pointer;
+    width: 50%; /* Centraliza o botão */
+}
+
+.loginContainer button:hover {
+    background-color: #741b0c;
+}

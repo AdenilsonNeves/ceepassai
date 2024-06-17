@@ -1,0 +1,94 @@
+/* style.css */
+:root {
+    --primary-color: #6d1c1c;
+    --secondary-color: #d6a214;
+    --background-color: #f8e4a8;
+    --text-color: #361309;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    line-height: 1.6;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    width: 120px;
+}
+
+.main-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-content p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background: var(--secondary-color);
+    color: white;
+}
+
+.footer a.botaoEscondido {
+    color: white;
+}
+
+.footer a.botaoEscondido:hover,
+.footer a.botaoEscondido:visited {
+    color: white;
+}
+
+.footer a.botaoEscondido h6 {
+    text-decoration: none; /* Adiciona isso para remover o sublinhado do h6 */
+    margin: 0; /* Remove a margem padrão do h6 */
+}
+

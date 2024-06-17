@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Ceep</title>
+    <link rel="stylesheet" href="../../css/cursos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        // Clica no botão a cada 7 segundos
+        setInterval(function() {
+            document.getElementById("next").click();
+        }, 7000);
+    </script>
+</head>
+<body>
+    
+    <header class="p-3 position-absolute w-100" style="z-index: 100;">
+        <nav class="container d-flex justify-content-between">
+            <a  href="../../index.html">Home</a>
+            <a  href="institucional.html">Contato</a>
+            <a  href="../../php/pages/publico/lista_alunos.php">RUB de RH</a>
+        </nav>
+    </header>
+
+    <!-- Carousel -->
+    <div class="carousel">
+        <div class="list">
+            <div class="item">
+                <img src="../../img/cursos/frenteCeep2.jpg" class="img-fluid">
+                <div class="content">
+                    <div class="title" style="color: #dd0c0c;">Cursos do</div>
+                    <div class="topic" style="color: #000000;">CEEP - ASSAÍ</div>
+                    <div class="des" style="color: #000;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../../img/cursos/devBg.jpg" class="img-fluid">
+                <div class="content">
+                    <div class="title" style="color: #ffffff;">Técnico em</div>
+                    <div class="topic" style="color: #2300be;">Desenvolvimento de Sistemas</div>
+                    <div class="des" style="color: #000000;">
+                        O curso técnico em Desenvolvimento de Sistemas prepara os estudantes para projetar, implementar e gerenciar software para diferentes plataformas. Os alunos aprendem a programar em várias linguagens, desenvolver aplicações web e móveis, além de entender os fundamentos de bancos de dados e segurança da informação. O curso é ideal para quem tem interesse em tecnologia e inovação, oferecendo uma base sólida para carreiras em TI.
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../../img/cursos/mecBg.jpg" class="img-fluid">
+                <div class="content">
+                    <div class="title" style="color: #ffffff;">Técnico em</div>
+                    <div class="topic" style="color: #242133;">Mecânica Indústrial</div>
+                    <div class="des" style="color: #000000;">
+                        O curso técnico em Mecânica forma profissionais qualificados para projetar, montar e realizar manutenção de máquinas e equipamentos mecânicos. Os alunos aprendem sobre os princípios da mecânica aplicada, desenho técnico mecânico e uso de ferramentas tecnológicas como CAD. O curso também aborda a manutenção industrial, pneumática e hidráulica, preparando-os para atuar em diversos setores da indústria.
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../../img/cursos/agroBg.jpg" class="img-fluid">
+                <div class="content">
+                    <div class="title" style="color: #ffffff;">Técnico em</div>
+                    <div class="topic" style="color: #03310a;">Agronegócio</div>
+                    <div class="des" style="color: #000000">
+                        O curso técnico em Agronegócio foca no estudo da gestão das empresas agropecuárias, combinando conhecimentos de agricultura com práticas de negócios. Os estudantes aprendem sobre técnicas de cultivo, criação de animais, além de aspectos econômicos e legais relacionados ao setor. O curso visa formar profissionais capazes de otimizar a produção agrícola, considerando a sustentabilidade e a viabilidade econômica.
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../../img/cursos/edfBg.jpg" class="img-fluid">
+                <div class="content">
+                    <div class="title" style="color: #ffffff;">Técnico em</div>
+                    <div class="topic" style="color: #414238;">Edificações</div>
+                    <div class="des" style="color: #000000;">
+                        No curso técnico em Edificações, os alunos são capacitados para trabalhar no planejamento, execução, e manutenção de obras como casas, prédios e infraestruturas urbanas. Eles aprendem sobre leitura e interpretação de desenhos técnicos, normas de construção, e uso de materiais adequados. O curso também aborda a gestão de projetos de construção, tornando-os aptos a supervisionar obras e garantir a qualidade e segurança.
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../../img/cursos/eletroBg.jpg" class="img-fluid">
+                <div class="content">
+                    <div class="title" style="color: #ffffff;">Técnico em</div>
+                    <div class="topic" style="color: #4d4949;">Eletroeletrônica</div>
+                    <div class="des" style="color: #000000;">
+                        O curso técnico em Eletroeletrônica equipa os alunos com conhecimentos para instalar, operar e manter equipamentos e sistemas eletrônicos e elétricos. O curso abrange desde circuitos elétricos básicos até sistemas de automação e controle, passando por eletrônica analógica e digital. Os formados podem trabalhar em setores que vão desde a manutenção industrial até o desenvolvimento de novos dispositivos eletrônicos.
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../../img/cursos/enfBg.jpg" class="img-fluid">
+                <div class="content">
+                    <div class="title" style="color: #ffffff;">Técnico em</div>
+                    <div class="topic" style="color: #b61a1a;">Enfermagem</div>
+                    <div class="des" style="color: #000000;">
+                        O curso técnico em Enfermagem prepara os estudantes para auxiliar na promoção, prevenção, recuperação e reabilitação dos processos saúde-doença. Cobrindo desde fundamentos de anatomia e fisiologia até técnicas de primeiros socorros e cuidados intensivos, o curso é essencial para formar enfermeiros aptos a trabalhar em hospitais, clínicas e atendimento domiciliar, sempre sob a supervisão de um enfermeiro.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev" class="btn btn-light">&lt;</button>
+            <button id="next" class="btn btn-light">&gt;</button>
+        </div>
+        <div class="time"></div>
+    </div>
+
+    <script src="../../js/app.js"></script>
+</body>
+</html>
